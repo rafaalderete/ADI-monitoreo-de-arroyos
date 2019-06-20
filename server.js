@@ -1,11 +1,23 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+require('./database');
 
-var port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 
+//Controllers
+const medicionController = require('./controllers/MedicionController.js');
+
+//Rutas
 app.get('/', function(req, res) {
-	console.log('get');
+	res.send('Running');
 });
+
+app.get('/medicion', medicionController.getMedicion);
+
+app.post('/medicion', medicionController.postMedicion);
 
 app.listen(port, function() {
 	console.log('Our app is running on http://localhost:' + port);
