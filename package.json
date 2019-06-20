@@ -1,11 +1,11 @@
 {
-  "name": "adi-server",
+  "name": "adi-monitorio-de-arroyos",
   "description": "Servidor para proyecto monitoreo de arroyos.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "~4.9.8"
+    "express": "^4.17.1"
   }
 }
