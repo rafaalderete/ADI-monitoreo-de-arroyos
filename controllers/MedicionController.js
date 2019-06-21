@@ -9,7 +9,7 @@ exports.postMedicion = async (req, res) => {
     const mediciones = req.body;
     nuevasMediciones = [];
     mediciones.forEach(function(medicion) {
-        var nivel = medicion.name;
+        var nivel = medicion.nivel;
         var temperatura = medicion.temperatura;
         var timestamp = medicion.timestamp;
         var newMedicion = new Medicion({nivel, temperatura, timestamp});
