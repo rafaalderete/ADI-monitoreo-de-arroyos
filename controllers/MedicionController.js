@@ -16,5 +16,7 @@ exports.postMedicion = async (req, res) => {
         nuevasMediciones.push(newMedicion);
     });
     await Medicion.insertMany(nuevasMediciones);
-    res.send('Mediciones recibidas');
+    console.log("Mediciones recibidas:");
+    console.log(nuevasMediciones);
+    res.send();
 };
