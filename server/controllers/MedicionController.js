@@ -20,7 +20,6 @@ exports.getMedicion = async (req, res) => {
 };
 
 exports.postMedicion = async (req, res) => {
-    console.log(Date.now());
     const medicion = req.body;
     let nivel = medicion.nivel;
     let temperatura = medicion.temperatura;
