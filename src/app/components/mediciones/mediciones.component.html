@@ -1,0 +1,32 @@
+<section class="graphs-tab section-data-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-project-tab" data-toggle="tab" href="#nav-project"
+               aria-selected="true">Nivel Hidrométrico</a>
+            <a class="nav-item nav-link" id="nav-per-person-tab" data-toggle="tab" href="#nav-per-person"
+               aria-selected="false">Temperatura</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-project">
+            <div class="row">
+              <div class="col-md-12 body-data-project">
+                  <app-line-chart [labels]="timestamps" [data]="niveles" [legend]="false" [type]="'nivel'" *ngIf="dataReady"></app-line-chart>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-per-person">
+            <div class="row">
+              <div class="col-md-12 body-data-project">
+                  <app-line-chart [labels]="timestamps" [data]="temperaturas" [legend]="false" [type]="'temperatura'" *ngIf="dataReady"></app-line-chart>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

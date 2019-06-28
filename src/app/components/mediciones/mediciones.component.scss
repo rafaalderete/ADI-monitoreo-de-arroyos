@@ -1,0 +1,42 @@
+.section-data-project {
+    margin-top: 20px;
+  }
+
+  .body-data-project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  
+
+.graphs-tab .container {
+    margin-top: 15px;
+}
+  
+  .graphs-tab #tabs .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #348157;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .graphs-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .graphs-tab thead {
+    color: black;
+  }
+  
+  .graphs-tab a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }

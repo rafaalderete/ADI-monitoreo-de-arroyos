@@ -8,5 +8,5 @@ mongoose.connect('mongodb+srv://' + user +':' + password + '@adi-db-kkses.mongod
   useCreateIndex: true,
   useNewUrlParser: true
 })
-  .then(db => console.log('adi-db connected'))
+  .then(db => console.log('adi-db connectada'))
   .catch(err => console.error(err));
