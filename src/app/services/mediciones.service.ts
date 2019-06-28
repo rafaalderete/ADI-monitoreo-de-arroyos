@@ -11,7 +11,7 @@ export class MedicionesService {
 
   constructor(private http: HttpClient) { }
   
-  readonly URL_API = 'http://localhost:8080/medicion';
+  readonly URL_API = 'https://adi-monitoreo-de-arroyos.herokuapp.com/medicion';
 
   getMediciones() {
     return this.http.get(this.URL_API);
